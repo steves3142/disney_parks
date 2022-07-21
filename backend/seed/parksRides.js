@@ -4,20 +4,116 @@ const { Park } = require('../models')
 db.on('error', console.error.bind(console, 'mongoDB connection error:'))
 
 const main = async () => {
-    // const rides = [
-    //     {
-    //         name: '',
-    //         park: '',
-    //         section: '',
-    //         rank: (num), 
-    //         description: '',
-    //         heightRequirement: '',
-    //         waterRide: true/false, 
-    //         wheelchairAccessible: true/false, 
-    //         wheelchairTransfer: true/false, 
-    //         image: ''
-    //     },
-    // ]
+    const rides = [
+        {
+            name: 'Haunted Mansion',
+            park: 'Magic Kingdom',
+            section: '',
+            rank: 1, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: 'Seven Dwarfs Mine Train',
+            park: 'Magic Kingdom',
+            section: '',
+            rank: 2, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: 'Tomorrowland Transit Authority People Mover',
+            park: 'Magic Kingdom',
+            section: '',
+            rank: 3, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: 'Spaceship Earth',
+            park: 'EPCOT',
+            section: '',
+            rank: 1, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: 'Living with the Land',
+            park: 'EPCOT',
+            section: '',
+            rank: 2, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: 'Frozen Ever After',
+            park: 'EPCOT',
+            section: '',
+            rank: 3, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: 'Tower of Terror',
+            park: 'Hollywood Studios',
+            section: '',
+            rank: 1, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: '',
+            park: 'Hollywood Studios',
+            section: '',
+            rank: 2, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+        {
+            name: '',
+            park: 'Hollywood Studios',
+            section: '',
+            rank: 3, 
+            description: '',
+            heightRequirement: '',
+            waterRide: true/false, 
+            wheelchairAccessible: true/false, 
+            wheelchairTransfer: true/false, 
+            image: ''
+        },
+    ]
 
     // parks.forEach(park => {
     //     let ride = rides.map((ride) => ride) // ??? trying to get at each individual ride within the function.
@@ -91,7 +187,7 @@ const main = async () => {
             name: 'Blizzard Beach',
             dateOpened: 'April 1, 1995',
             description: `'Disney's Blizzard Beach is a water theme park located at the Walt Disney World Resort in Bay Lake, Florida near Orlando. All water areas are heated (at approximately 80 °F or 27 °C), with the exception of the melting snow in the ice cave of Cross Country Creek. The park opened on April 1, 1995 and was the third Walt Disney World water park. In 2016, the park hosted approximately 2,091,000 guests, ranking it the third-most visited water park in the world, behind its sister park, Typhoon Lagoon. Blizzard Beach is open year-round with an annual maintenance closure in the winter. During the closure, its sister park, Typhoon Lagoon, remains open. The park's whimsical and imaginative concept was conceived by designer-Imagineer Marshall Monroe. Innovative elements of the park include a beach chair-themed chair lift, complete with beach umbrellas, and pretend snow skis. The setting and atmosphere of the park are marked by a unique blending of tropical landscaping with simulated melting snow throughout. The mountain is a unique engineering structure constructed in a challenging setting - a high water table Florida woodland. And the architecture is a playful intersection of alpine lodges with Caribbean colors and accents.'--Wikipedia`,
-            sections: [], 
+            sections: ['Purple Slopes', 'Green Slopes', 'Red Slopes'], 
             // topRides: selectedRides.map((ride) => ride.name), // array seeded from rides db
             topRestaurant: 'Warming Hut',
             waterPark: true, 
