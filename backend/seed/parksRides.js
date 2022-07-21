@@ -1,24 +1,24 @@
 const db = require('../db')
 const Park = require('../models/park')
-const Ride = require('../models/ride')
+// const Ride = require('../models/ride')
 
 db.on('error', console.error.bind(console, 'mongoDB connection error:'))
 
 const main = async () => {
-    const rides = [
-        {
-            name: '',
-            park: '',
-            section: '',
-            rank: (num), 
-            description: '',
-            heightRequirement: '',
-            waterRide: true/false, 
-            wheelchairAccessible: true/false, 
-            wheelchairTransfer: true/false, 
-            image: ''
-        },
-    ]
+    // const rides = [
+    //     {
+    //         name: '',
+    //         park: '',
+    //         section: '',
+    //         rank: (num), 
+    //         description: '',
+    //         heightRequirement: '',
+    //         waterRide: true/false, 
+    //         wheelchairAccessible: true/false, 
+    //         wheelchairTransfer: true/false, 
+    //         image: ''
+    //     },
+    // ]
 
     // parks.forEach(park => {
     //     let ride = rides.map((ride) => ride) // ??? trying to get at each individual ride within the function.
