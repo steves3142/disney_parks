@@ -4,9 +4,8 @@ const Ride = new Schema(
     {
         name: { type: String, required: true },
         park: { type: String, required: true },
-        section: { type: String, required: true },
+        section: { type: String, required: false },
         rank: { type: Number, required: true }, // ranked 1-3 out of top 3 per park
-        description: { type: String, required: true },
         heightRequirement: { type: String, required: true },
         waterRide: { type: Boolean, required: true }, // boolean
         wheelchairAccessible: { type: Boolean, required: true }, // boolean
