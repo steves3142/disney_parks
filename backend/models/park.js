@@ -7,10 +7,10 @@ const Park = new Schema(
         description: { type: String, required: true },
         sections: [{ type: String, required: false }], // array
         // topRides: [{ type: Schema.Types.ObjectId, ref: 'Ride' }], // array seeded from rides db
-        topRestaurant: { type: String, required: false },
+        topRestaurant: { type: String, required: true },
         waterPark: { type: Boolean, required: true }, // boolean
-        serviceAnimalRelief: [{ type: String, required: false }], //array of relevant sections
-        image: { type: String, required: false }
+        serviceAnimalRelief: [{ type: String, required: true }], //array of relevant sections
+        image: { type: String, required: true }
     }
 )
 
