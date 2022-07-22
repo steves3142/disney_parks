@@ -31,13 +31,13 @@ const Home = () => {
   const findPark = (park) => {
     navigate(`/parks/details/${park._id}`)
   }
-  
+
   return (
     <div className="home">
       {/* <h1 className="main-h1">WALT DISNEY WORLD</h1> */}
       <div className="theme-box">
-        {parks.map((park) => (
-          <div className="theme-park" key={park} onClick={() => findPark(park)}>
+        {parks.map((park, i) => (
+          <div className="theme-park" key={i} onClick={() => findPark(park)}>
             <h1>{park.name}</h1>
             <img src={park.image} alt="" />
           </div>

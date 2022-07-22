@@ -13,8 +13,7 @@ const Rides = () => {
   let navigate = useNavigate()
 
   const findPark = (park) => {
-    navigate(`/parks/details/:parkId`)
-  }
+    navigate(`/parks/details/${park._id}`)
 
   return (
     <main>
@@ -28,7 +27,7 @@ const Rides = () => {
               alt=""
             ></img>
             <p>ride's name</p>
-            <button className="ride-btn" onClick={() => findPark(ride)}>
+            <button className="ride-btn" onClick={() => findPark(park)}>
               Park
             </button>
           </div>

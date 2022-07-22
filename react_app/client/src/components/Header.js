@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <header>
+      <h1 className="main-h1">WALT DISNEY WORLD</h1>
       <div>
         <ul>
           <li>
