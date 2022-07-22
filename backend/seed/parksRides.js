@@ -287,8 +287,8 @@ const main = async () => {
         },
     ]
 
-    // await Ride.insertMany(rides)
-    // console.log("created rides!")
+    await Ride.insertMany(rides)
+    console.log("created rides!")
 
     await Park.insertMany(parks)
     console.log("created parks!")
