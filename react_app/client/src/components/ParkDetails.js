@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+// import { listenerCount } from '../../../../backend/models/park'
 
 const ParkDetail = () => {
   const [parkId, setParkId] = useState('')
   const [park, setpark] = useState('')
   const [areas, setAreas] = useState([])
-  const [ridesIDs, setridesIDs] = useState([])
+  const [ridesName, setridesName] = useState([])
   const [rides, setrides] = useState([])
 
   let { id } = useParams()
@@ -19,11 +20,12 @@ const ParkDetail = () => {
         await setParkId(id)
 
         const res = await axios.get(`/parks/details/${parkId}`)
-
         const park1 = await res.data.park
         await setpark(park1)
+        console.log(park)
         await setAreas(park1.serviceAnimalRelief)
-        // await setridesIDs(park1.rides)
+        await setridesName(park1.topRides)
+        // console.log(ridesName)
       } catch (e) {
         console.log(e.message)
       }
@@ -35,36 +37,40 @@ const ParkDetail = () => {
   useEffect(() => {
     async function getride() {
       try {
-        await ridesdetail()
+        const ridesdetail = async (ridesName) => {
+          for (let i = 0; i < ridesName.length; i++) {
+            let res = await axios.get(
+              `/rides/details/${ridesName[0].replace(' ', '&')}`
+            )
+            let rides1 = [...rides]
+            await rides1.push(res.data)
+            await setrides(rides1)
+            console.log(rides)
+          }
+        }
       } catch (e) {
         console.log(e.message)
       }
     }
 
     getride()
-  }, [rides])
+  }, [ridesName])
 
-
-    const ridesdetail = async (ridesIDs) =>{
-      ridesIDs.forEach( ride =>{
-        const res = await axios.get(`/rides/details/${ride}`)
-        let rides =[...ridesIDs]
-        await rides.push(res.data)
-        setrides(rides)
-
-    })
-  }
+  // ridesIDs.forEach((ride) => {
+  //   let res = axios.get(`/rides/details/${ride}`)
+  //   let rides = [...ridesIDs]
+  //   rides.push(res.data)
+  //   setrides(rides)
+  // })
 
   return (
     <div className="park-main">
       <h1>{park.name}</h1>
       <div className="ride-box">
         <div className="ride-info">
-          {/* {rides.map((ride)=>(
-
-
-        ))} */}
-
+          {rides.map((area, i) => (
+            <p>{area.name} </p>
+          ))}
           <a>Top</a>
           <img
             src="https://ziggyknowsdisney.com/wp-content/uploads/2021/04/best-disney-world-roller-coasters-1-800x533.jpg"
