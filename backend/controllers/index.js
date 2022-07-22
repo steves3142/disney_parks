@@ -35,12 +35,10 @@ const getAllRides = async (req, res) => {
     return res.send(e.message)
   }
 }
-const getrideByName = async (req, res) => {
+const getrideById = async (req, res) => {
   try {
-    const { name } = req.params
-    console.log(name)
-    const name1 = name.replace(' ', '&')
-    const ride = await Ride.findOne({ name1 })
+    const { id } = req.params
+    const ride = await Ride.findById(id)
     if (ride) {
       return res.json({ ride })
     } else {
@@ -55,5 +53,5 @@ module.exports = {
   getAllParks,
   getAllRides,
   getparkById,
-  getrideByName
+  getrideById
 }
