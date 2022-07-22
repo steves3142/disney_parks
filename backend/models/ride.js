@@ -10,7 +10,7 @@ const Ride = new Schema(
         waterRide: { type: Boolean, required: true }, // boolean
         wheelchairOnRide: { type: Boolean, required: true }, // boolean
         wheelchairTransfer: { type: Boolean, required: true }, // boolean, usually false if wheelchairAccessible = true
-        image: { type: String, required: true }
+        image: { type: String, required: false }
     }
 )
 
