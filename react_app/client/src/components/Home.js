@@ -29,8 +29,9 @@ const Home = () => {
   }, [])
 
   const findPark = (park) => {
-    navigate(`/parks/details/:parkId`)
+    navigate(`/parks/details/${park._id}`)
   }
+  
   return (
     <div className="home">
       {/* <h1 className="main-h1">WALT DISNEY WORLD</h1> */}
@@ -39,8 +40,6 @@ const Home = () => {
           <div className="theme-park" key={park} onClick={() => findPark(park)}>
             <h1>{park.name}</h1>
             <img src={park.image} alt="" />
-            <h1>{park.dateOpened}</h1>
-            <h2>description</h2>
           </div>
         ))}
       </div>

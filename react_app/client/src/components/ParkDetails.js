@@ -1,23 +1,31 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import axios from 'axios'
 
 const ParkDetail = () => {
   const [parkId, setParkId] = useState('')
   const [park, setpark] = useState('')
 
-  //   let { id } = useParams()
+  let { id } = useParams()
 
-  //   useEffect(async () => {
-  //     await setParkId(id)
-  //     axios.get(`/parks/${parkId}`).then((res) => {
-  //       console.log(res.data)
-  //       setPark(res.data)
-  //     })
-  //   }, [])
+  useEffect(() => {
+    console.log(parkId)
+    async function getPark() {
+      console.log('helllo')
+      await setParkId(id)
+      const res = await axios.get(`/parks/details/${parkId}`)
+      console.log(res.data)
+      const park = await res.data.park
+      await setpark(park)
+    }
+    getPark()
+  }, [])
+
+  console.log(park)
 
   return (
     <div className="park-main">
-      <h1>park.name</h1>
+      <h1>{park.name}</h1>
       <div className="ride-box">
         <div className="ride-info">
           <a>Top</a>
@@ -44,9 +52,27 @@ const ParkDetail = () => {
           <p>ride's name</p>
         </div>
       </div>
-      <p>Streets</p>
-      <p>Quick restaurant</p>
-      <p>Service related</p>
+
+      <h4>
+        Date Open: <p>{park.dateOpened}</p>
+      </h4>
+
+      <h4>
+        Description: <p>{park.description}</p>
+      </h4>
+
+      <h4>
+        Top restaurant: <p>{park.topRestaurant}</p>
+      </h4>
+      <h4>
+        Water Park: <p>{park.waterPark ? 'Yes' : 'No'}</p>
+      </h4>
+      <h4>
+        serviceAnimalRelief areas:
+        {park.serviceAnimalRelief.map((area) => (
+          <p>{area}, </p>
+        ))}
+      </h4>
     </div>
   )
 }

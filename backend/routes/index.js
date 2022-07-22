@@ -7,5 +7,6 @@ router.get('/', (req, res) => {
 })
 
 router.get('/parks', controllers.getAllParks)
+router.get('/parks/details/:id', controllers.getparkById)
 
 module.exports = router
