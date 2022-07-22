@@ -7,5 +7,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/parks', controllers.getAllParks)
-
+router.get('/parks/details/:id', controllers.getparkById)
+router.get('/rides', controllers.getAllRides)
+router.get('/rides/details/:id', controllers.getrideById)
 module.exports = router

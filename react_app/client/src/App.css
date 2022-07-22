@@ -48,6 +48,7 @@ header {
   display: flex;
   border-bottom: 3px solid rgb(196, 134, 53);
   padding: 0;
+  z-index: 100;
 }
 
 header ul {
@@ -87,6 +88,7 @@ header a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 20px auto;
   width: 1000px;
   height: 700px;
 }
@@ -99,14 +101,15 @@ header a:hover {
   color: rgb(213, 156, 81);
   padding: 0;
   text-shadow: 3px 2px #282c34;
-  margin: 10px 250px;
+  margin: 10px 180px;
 }
 
 .theme-park {
   background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
   color: white;
   width: 300px;
-  height: 300px;
+  height: 320px;
   margin: 10px 10px;
 }
 
@@ -116,19 +119,42 @@ header a:hover {
 }
 
 .park-main {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
 
   align-items: center;
-  height: 100vh;
+  height: 100%vh;
+  width: 80%;
+}
+
+.park-main h1 {
+  color: rgb(196, 134, 53);
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+  text-shadow: 3px 2px #282c34;
+}
+
+.park-main h4 {
+  font-size: 25px;
+  margin-top: 0;
+  color: rgb(90, 57, 15);
+}
+
+.park-main p {
+  font-size: 15px;
+  text-align: center;
+  color: rgb(196, 134, 53);
 }
 
 .ride-box {
   height: 300px;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .ride-info {
@@ -191,7 +217,7 @@ main {
 }
 
 .ride {
-  background-color: rgba(47, 5, 187, 1);
+  background-color: rgba(196, 134, 53, 0.8);
   width: 300px;
   height: 400px;
   margin: 10px auto;
@@ -208,11 +234,12 @@ main {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: lightskyblue;
+  background-color: rgba(49, 31, 6, 0.8);
   color: #fff;
   font-size: 20px;
   box-shadow: 3px 3px 5px #282c34;
   border: 0;
+  margin-top: 40px;
 }
 
 .ride-btn {
