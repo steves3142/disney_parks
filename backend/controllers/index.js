@@ -26,18 +26,32 @@ const getparkById = async (req, res) => {
   }
 }
 
-// const getAllRides = async (req, res) => {
-//   try {
-//     const rides = await Ride.find({})
-//     console.log(rides)
-//     return res.json({ rides })
-//   } catch (e) {
-//     return res.send(e.message)
-//   }
-// }
+const getAllRides = async (req, res) => {
+  try {
+    const rides = await Ride.find({})
+    console.log(rides)
+    return res.json({ rides })
+  } catch (e) {
+    return res.send(e.message)
+  }
+}
+const getrideById = async (req, res) => {
+  try {
+    const { id } = req.params
+    const ride = await Ride.findById(id)
+    if (ride) {
+      return res.json({ ride })
+    } else {
+      return res.send(`this id is not exiting`)
+    }
+  } catch (e) {
+    return res.send(e.message)
+  }
+}
 
 module.exports = {
   getAllParks,
-  // getAllRides,
-  getparkById
+  getAllRides,
+  getparkById,
+  getrideById
 }

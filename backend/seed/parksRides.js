@@ -287,16 +287,16 @@ const main = async () => {
         },
     ]
 
-    await Ride.insertMany(rides)
-    console.log("created rides!")
+  await Ride.insertMany(rides)
+  console.log("created rides!")
 
-    await Park.insertMany(parks)
-    console.log("created parks!")
+  await Park.insertMany(parks)
+  console.log('created parks!')
 }
 
 const run = async () => {
-    await main()
-    db.close()
+  await main()
+  db.close()
 }
 
 run()
