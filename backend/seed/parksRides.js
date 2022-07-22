@@ -1,5 +1,5 @@
 const db = require('../db')
-const { Park } = require('../models')
+const { Park, Ride } = require('../models')
 
 db.on('error', console.error.bind(console, 'mongoDB connection error:'))
 
@@ -287,8 +287,8 @@ const main = async () => {
         },
     ]
 
-    // await Ride.insertMany(rides)
-    // console.log("created rides!")
+    await Ride.insertMany(rides)
+    console.log("created rides!")
 
     await Park.insertMany(parks)
     console.log("created parks!")
