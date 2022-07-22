@@ -25,6 +25,22 @@ const getparkById = async (req, res) => {
     return res.send(e.message)
   }
 }
+const getparkByName = async (req, res) => {
+  try {
+    // const { name } = req.params
+
+    const name1 = req.params.name.replace('&', ' ')
+    console.log(name1)
+    const park = await Park.findOne({ name: name1 })
+    if (park) {
+      return res.json({ park })
+    } else {
+      return res.send(`this id is not exiting`)
+    }
+  } catch (e) {
+    return res.send(e.message)
+  }
+}
 
 const getAllRides = async (req, res) => {
   try {

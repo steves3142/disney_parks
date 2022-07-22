@@ -17,7 +17,6 @@ const ParkDetail = () => {
     async function getPark() {
       try {
         await setParkId(id)
-
         const res = await axios.get(`/parks/details/${parkId}`)
 
         const park1 = await res.data.park
@@ -31,29 +30,6 @@ const ParkDetail = () => {
 
     getPark()
   }, [parkId])
-
-  useEffect(() => {
-    async function getride() {
-      try {
-        await ridesdetail()
-      } catch (e) {
-        console.log(e.message)
-      }
-    }
-
-    getride()
-  }, [rides])
-
-
-    const ridesdetail = async (ridesIDs) =>{
-      ridesIDs.forEach( ride =>{
-        const res = await axios.get(`/rides/details/${ride}`)
-        let rides =[...ridesIDs]
-        await rides.push(res.data)
-        setrides(rides)
-
-    })
-  }
 
   return (
     <div className="park-main">
