@@ -9,27 +9,41 @@ const Rides = () => {
   const [rides, setRides] = useState([])
   const [parkId, setParkId] = useState('')
   const [park, setpark] = useState('')
+  const [newParkID, setnewParkID] = useState('')
 
   let navigate = useNavigate()
 
-  const findPark = (park) => {
-    navigate(`/parks/details/${park._id}`)
+  useEffect(() => {
+    console.log('helllo')
+    async function getRides() {
+      console.log('helllo')
+      const res = await axios.get(`/rides`)
+      console.log(res)
+      setRides(res.data.rides)
+    }
+    getRides()
+  }, [])
+
+  const findPark = async (ride) => {
+    let res = await axios.get(`/parks/${ride}`)
+    console.log(res.data.park)
+    let parkID = await res.data.park._id
+    console.log(parkID)
+    setnewParkID(parkID)
+    navigate(`/parks/details/${parkID}`)
+    setnewParkID('')
   }
 
   return (
     <main>
       <h1>Rides</h1>
       <div className="ride-main">
-        {arr.map((ride) => (
+        {rides.map((ride) => (
           <div className="ride">
-            <img
-              className="rides-img"
-              src="https://ziggyknowsdisney.com/wp-content/uploads/2021/04/best-disney-world-roller-coasters-1-800x533.jpg"
-              alt=""
-            ></img>
-            <p>ride's name</p>
-            <button className="ride-btn" onClick={() => findPark(park)}>
-              Park
+            <img className="rides-img" src={ride.image} alt=""></img>
+            <p>{ride.name}</p>
+            <button className="ride-btn" onClick={() => findPark(ride.park)}>
+              {ride.park}
             </button>
           </div>
         ))}
