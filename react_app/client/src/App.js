@@ -6,8 +6,22 @@ import Home from './components/Home'
 import { Routes, Route } from 'react-router-dom'
 import ParkDetail from './components/ParkDetails'
 import Rides from './pages/Rides'
+import { useEffect, useState } from 'react'
 
 function App() {
+  // useEffect(() => {
+  //   console.log('helllo')
+  //   async function getParks() {
+  //     console.log('helllo')
+  //     // const res = await axios.get(`/parks`)
+  //     console.log(res)
+  //     // setParks(res.data.results)
+  //   }
+  //   getParks()
+  // }, [])
+
+  console.log('hello')
+
   return (
     <div className="App">
       <Header />

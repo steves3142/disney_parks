@@ -110,6 +110,11 @@ header a:hover {
   margin: 10px 10px;
 }
 
+.theme-park img {
+  width: 250px;
+  height: 200px;
+}
+
 .park-main {
   background-color: aquamarine;
   display: flex;

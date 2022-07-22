@@ -10,12 +10,23 @@ const Home = () => {
 
   let navigate = useNavigate()
 
-  // useEffect(() => {
-  //   axios.get('/parks').then((res) => {
+  // useEffect(async () => {
+  //   await axios.get('/parks').then((res) => {
   //     console.log(res.data)
   //     setParks(res.data)
   //   })
   // }, [])
+
+  useEffect(() => {
+    console.log('helllo')
+    async function getParks() {
+      console.log('helllo')
+      const res = await axios.get(`/parks`)
+      console.log(res)
+      setParks(res.data.parks)
+    }
+    getParks()
+  }, [])
 
   const findPark = (park) => {
     navigate(`/parks/details/:parkId`)
@@ -24,11 +35,11 @@ const Home = () => {
     <div className="home">
       {/* <h1 className="main-h1">WALT DISNEY WORLD</h1> */}
       <div className="theme-box">
-        {arr.map((park) => (
+        {parks.map((park) => (
           <div className="theme-park" key={park} onClick={() => findPark(park)}>
-            <h1>type of theme park</h1>
-            <img src="" alt="" />
-            <h1>element</h1>
+            <h1>{park.name}</h1>
+            <img src={park.image} alt="" />
+            <h1>{park.dateOpened}</h1>
             <h2>description</h2>
           </div>
         ))}
