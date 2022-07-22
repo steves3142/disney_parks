@@ -17,7 +17,6 @@ const ParkDetail = () => {
     async function getPark() {
       try {
         await setParkId(id)
-
         const res = await axios.get(`/parks/details/${parkId}`)
 
         const park1 = await res.data.park
@@ -32,39 +31,14 @@ const ParkDetail = () => {
     getPark()
   }, [parkId])
 
-  useEffect(() => {
-    async function getride() {
-      try {
-        await ridesdetail()
-      } catch (e) {
-        console.log(e.message)
-      }
-    }
-
-    getride()
-  }, [rides])
-
-
-    const ridesdetail = async (ridesIDs) =>{
-      ridesIDs.forEach( ride =>{
-        const res = await axios.get(`/rides/details/${ride}`)
-        let rides =[...ridesIDs]
-        await rides.push(res.data)
-        setrides(rides)
-
-    })
-  }
-
   return (
     <div className="park-main">
       <h1>{park.name}</h1>
       <div className="ride-box">
         <div className="ride-info">
-          {/* {rides.map((ride)=>(
-
-
-        ))} */}
-
+          {/* {rides.map((area, i) => (
+            <p>{area.name} </p>
+          ))} */}
           <a>Top</a>
           <img
             src="https://ziggyknowsdisney.com/wp-content/uploads/2021/04/best-disney-world-roller-coasters-1-800x533.jpg"
