@@ -69,5 +69,6 @@ module.exports = {
   getAllParks,
   getAllRides,
   getparkById,
-  getrideById
+  getrideById, 
+  getparkByName
 }
