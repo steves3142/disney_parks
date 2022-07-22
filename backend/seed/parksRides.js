@@ -272,7 +272,7 @@ const main = async () => {
             topRestaurant: 'Leaning Palms', // source: mousehacking.com    
             waterPark: true, 
             serviceAnimalRelief: ['Located at the North and South ends of the park.'], 
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Walt_Disney_World_Typhoon_Lagoon_Entrance.JPG/' // source: wikipedia.org
+            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Walt_Disney_World_Typhoon_Lagoon_Entrance.JPG/1280px-Walt_Disney_World_Typhoon_Lagoon_Entrance.JPG' // source: wikipedia.org
         },
         {
             name: 'Blizzard Beach',
