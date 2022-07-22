@@ -36,9 +36,11 @@ const ParkDetail = () => {
       <h1>{park.name}</h1>
       <div className="ride-box">
         <div className="ride-info">
-          {/* {rides.map((area, i) => (
-            <p>{area.name} </p>
-          ))} */}
+          {/* {rides.map((ride)=>(
+
+
+        ))} */}
+
           <a>Top</a>
           <img
             src="https://ziggyknowsdisney.com/wp-content/uploads/2021/04/best-disney-world-roller-coasters-1-800x533.jpg"
