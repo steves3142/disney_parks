@@ -14,6 +14,7 @@ const Rides = () => {
 
   const findPark = (park) => {
     navigate(`/parks/details/${park._id}`)
+  }
 
   return (
     <main>
