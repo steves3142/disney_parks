@@ -14,7 +14,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://i.redd.it/2a931xckqdzx.jpg'
         },
         {
             name: 'Seven Dwarfs Mine Train',
@@ -25,7 +25,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2014_18/413931/tdy-140501-snow-white-ride-tease-130.jpg'
         },
         {
             name: 'Tomorrowland Transit Authority People Mover',
@@ -36,7 +36,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: false, 
-            image: ''
+            image: 'https://wdwntnow.oseast-us-1.phoenixnap.com/images/Attraction/80010224/06.jpg'
         },
         {
             name: 'Spaceship Earth',
@@ -47,7 +47,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'http://2.bp.blogspot.com/-ifc5MsHUMjM/USZJpbmqPjI/AAAAAAAAA34/_cKL4WXtDwQ/s1600/spaceship-earth-boarding-ride.jpg'
         },
         {
             name: 'Living with the Land',
@@ -58,7 +58,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: true, 
             wheelchairTransfer: false, 
-            image: ''
+            image: 'https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2019/07/sjhdfgjhrb678-624x351.jpg'
         },
         {
             name: 'Frozen Ever After',
@@ -69,7 +69,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://fthmb.tqn.com/mGkvRP6hZf788ZEzXQJ3JDaxZ2E=/3000x2000/filters:fill(auto,1)/frozen-ever-after-in-the-norway-pavilion-at-epcot-546295416-591856bd3df78c7a8c9e0617.jpg'
         },
         {
             name: 'Tower of Terror',
@@ -80,7 +80,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://live.staticflickr.com/156/424635149_1570759ba1_b.jpg'
         },
         {
             name: 'Star Wars: Rise of the Resistance',
@@ -91,7 +91,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://i1.wp.com/www.disneytouristblog.com/wp-content/uploads/2020/11/star-wars-rise-resistance-ride-modified-galaxys-edge-disney-295.jpg?fit=800%2C571&ssl=1'
         },
         {
             name: `Mickey & Minnie's Runaway Railway`,
@@ -102,7 +102,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://media1.popsugar-assets.com/files/thumbor/e692dTM5CLwdjR08EpiBNPJdQIo/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2020/03/04/837/n/24155406/789a8d6bf2dfab58_04/i/Photos-Mickey-Minnie-Runaway-Railway-at-Walt-Disney-World.jpg'
         },
         {
             name: 'Avatar Flight of Passage',
@@ -113,7 +113,7 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://steemitimages.com/DQmY9Ymsgdj4Vv6ModECWy6xKjksi8Mwe4kSuW5yNUP1Vby/IMG_5190.JPG'
         },
         {
             name: 'Expedition Everest',
@@ -124,10 +124,10 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://d3bo0mk5kk7egf.cloudfront.net/imgstore/ElementGalleryItems/attractions/Fullsize/Expedition-Everest_Full_39404.jpg?width=2280&quality=60&encoder=freeimage&progressive=true'
         },
         {
-            name: 'Kilamanjaro Safari',
+            name: 'Kilimanjaro Safari',
             park: 'Animal Kingdom',
             section: 'Africa',
             rank: 3, 
@@ -135,10 +135,10 @@ const main = async () => {
             waterRide: false, 
             wheelchairOnRide: true, 
             wheelchairTransfer: false, 
-            image: ''
+            image: 'https://www.themeparktrader.com/wp-content/uploads/2016/03/kilimanjaro-safaris.jpg'
         },
         {
-            name: 'Crusn N Gusher',
+            name: 'Crush N Gusher',
             park: 'Typhoon Lagoon',
             section: 'N/A',
             rank: 1, 
@@ -146,7 +146,7 @@ const main = async () => {
             waterRide: true, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://secure.parksandresorts.wdpromedia.com/resize/mwImage/1/640/360/90/wdpromedia.disney.go.com/media/wdpro-assets/gallery/attractions/typhoon-lagoon/crush-n-gusher/crush-n-gusher-gallery01.jpg?07072014213050'
         },
         {
             name: 'Keelhaul Falls',
@@ -157,7 +157,7 @@ const main = async () => {
             waterRide: true, 
             wheelchairOnRide: false, 
             wheelchairTransfer: false, 
-            image: ''
+            image: 'https://secure.parksandresorts.wdpromedia.com/resize/mwImage/1/640/360/90/wdpromedia.disney.go.com/media/wdpro-assets/gallery/attractions/typhoon-lagoon/keelhaul-falls/keelhaul-falls-gallery01.jpg?07072014213124'
         },
         {
             name: 'Storm Slides',
@@ -168,7 +168,7 @@ const main = async () => {
             waterRide: true, 
             wheelchairOnRide: false, 
             wheelchairTransfer: false, 
-            image: ''
+            image: 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/gallery/attractions/typhoon-lagoon/storm-slides/storm-slides-gallery00.jpg?1553550105965'
         },
         {
             name: 'Summit Plummet',
@@ -179,7 +179,7 @@ const main = async () => {
             waterRide: true, 
             wheelchairOnRide: false, 
             wheelchairTransfer: false, 
-            image: ''
+            image: 'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/gallery/attractions/blizzard-beach/summit-plummet/summit-plummet-gallery00.jpg?1553550196221'
         },
         {
             name: 'Slush Gusher',
@@ -190,7 +190,7 @@ const main = async () => {
             waterRide: true, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://www.orlando-florida.net/wp-content/uploads/2016/01/Slush-Gusher.jpg'
         },
         {
             name: 'Snow Stormers',
@@ -201,7 +201,7 @@ const main = async () => {
             waterRide: true, 
             wheelchairOnRide: false, 
             wheelchairTransfer: true, 
-            image: ''
+            image: 'https://secure.parksandresorts.wdpromedia.com/resize/mwImage/1/630/354/75/wdpromedia.disney.go.com/media/wdpro-assets/parks-and-tickets/attractions/blizzard-beach/snow-stormers/snow-stormers-00.jpg?17072014102713'
         }
     ]
 
@@ -257,7 +257,7 @@ const main = async () => {
             dateOpened: 'April 22, 1998',
             description: `'Disney's Animal Kingdom Theme Park is a zoological theme park at the Walt Disney World Resort in Bay Lake, Florida, near Orlando. Owned and operated by The Walt Disney Company through its Parks, Experiences and Products division, it is the largest theme park in the world, covering 580 acres (230 ha). The park opened on Earth Day, April 22, 1998, and was the fourth theme park built at the resort. The park is dedicated and themed around natural environment and animal conservation, a philosophy once pioneered by Walt Disney. Disney's Animal Kingdom distinguishes itself from the rest of Walt Disney World's theme parks by featuring traditional attractions as well as hundreds of species of live animals. Special designs and provisions were incorporated throughout the park to protect the animals' welfare. The park is located on the western edge of the resort and is isolated from the other theme parks and properties to minimize external disruptions to the animals. In 2019, Disney's Animal Kingdom hosted 13.888 million guests, ranking it as the third-most-visited theme park in North America and the sixth-most-visited theme park in the world. The park is the second-most-visited at Walt Disney World Resort, behind Disney's Magic Kingdom. The park's icon is the Tree of Life, a 145-foot-tall (44 m), 50-foot-wide (15 m) artificial baobab tree.'--Wikipedia`,
             sections: ['Oasis', 'Discovery Island', 'Pandora: The World of Avatar', 'Africa', 'Asia', 'Dinoland U.S.A.'], 
-            topRides: ['Avatar Flight of Passage', 'Expedition Everest', 'Kilamanjaro Safari'], // source: mousehacking.com
+            topRides: ['Avatar Flight of Passage', 'Expedition Everest', 'Kilimanjaro Safari'], // source: mousehacking.com
             topRestaurant: `Satu'li Canteen`, // source: mousehacking.com
             waterPark: false, 
             serviceAnimalRelief: ['Discovery Island', 'Pandora: The World of Avatar', 'Asia', 'Dinoland U.S.A.'], 
