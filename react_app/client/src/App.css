@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+  overflow: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background: radial-gradient(
+    circle at center,
+    rgba(181, 124, 25, 0.7) 40%,
+    rgb(90, 43, 186) 110%
+  );
+  justify-content: flex-end;
+  display: flex;
+  border-bottom: 3px solid rgb(196, 134, 53);
+  padding: 0;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header a {
+  color: #eee;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin: auto 1em;
+}
+
+header a:hover {
+  color: aquamarine;
+}
+
+.is-active {
+  color: aquamarine;
+}
+.home {
+  /* background-color: #61dafb; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/61C377B14F25252D8A112D23A89A78516435DCF60F1C151854DE3D91C755A11A/scale?width=2880&aspectRatio=1.78&format=jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.theme-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 700px;
+}
+
+.main-h1 {
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  font-size: 27px;
+  font-weight: 700;
+  color: rgb(213, 156, 81);
+  padding: 0;
+  text-shadow: 3px 2px #282c34;
+  margin: 10px 250px;
+}
+
+.theme-park {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 300px;
+  height: 300px;
+  margin: 10px 10px;
+}
+
+.theme-park img {
+  width: 250px;
+  height: 200px;
+}
+
+.park-main {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 100vh;
+}
+
+.ride-box {
+  height: 300px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.ride-info {
+  width: 250px;
+  height: 250px;
+  margin: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+.ride-info img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ride-info.ride-info a {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.ride-info:nth-of-type(2) a {
+  padding: 10px 20px;
+}
+.ride-info:nth-of-type(3) a {
+  padding: 10px 20px;
+}
+
+.rides-img {
+  width: 250px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.ride-main {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+/* .ride-btn {
+  display: block;
+} */
+
+main {
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* overflow-x: scroll; */
+}
+
+.ride {
+  background-color: rgba(47, 5, 187, 1);
+  width: 300px;
+  height: 400px;
+  margin: 10px auto;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ride-btn {
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightskyblue;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 3px 3px 5px #282c34;
+  border: 0;
+}
+
+.ride-btn {
+  outline: 0;
+}
+
+.ride-btn:active {
+  transform: scale(0.98);
+  outline: 0;
+}
